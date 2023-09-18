@@ -1,0 +1,121 @@
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    position:absolute;
+    top:0px;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+header h1{
+    margin-left: 40%;
+}
+
+@media (width < 540px) {
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+header img {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1524207874394-5ec7c8c8e1a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+}
+
+.box {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 400px;
+    padding: 20px;
+    width: 1000px;
+}
+
+.box-glock{
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 733px;
+    padding: 20px;
+    width: 1000px;
+}
+
+.caja1 {
+    text-align: center;
+}
+
+.boton{
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 5px 20px;
+    transition: background-color solid 2s;
+}
+
+.boton:hover{
+    background-color: rgb(175, 175, 175);
+}
+
+.caja1 img{
+    border: 3px solid rgb(29, 240, 1);
+    width: 80%;
+    border-radius: 20%;
+}
+
+.caracteristicas-box{
+    background-color: rgb(133, 133, 133);
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid black;
+}
+
+.caracteristicas1{
+    width: 100%;
+}
+
+.caracteristicas1 h3{
+    margin: 0;
+    padding: 10px;
+    border: 3px solid black;
+}
+
+.caracteristicas2{
+    width: 100%;
+}
+
+.caracteristicas2 h3{
+    background-color: rgb(102, 102, 102);
+    margin: 0;
+    padding: 10px;
+    border: 3px solid black;
+}
