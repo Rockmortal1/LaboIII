@@ -21,19 +21,13 @@ header h1{
     margin-left: 40%;
 }
 
-@media (width < 500px) {
-    header{
-        flex-direction: column;
-        align-items: start;
-    }
-}
+
 
 header img {
     text-decoration: none;
 }
 
 body {
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -50,6 +44,8 @@ body {
 }
 
 .box {
+    min-height: 100vh;
+    justify-content: space-between;
     background-color: white;
     border-radius: 20px;
     text-align: center;
@@ -64,12 +60,14 @@ body {
     border-radius: 20px;
     text-align: center;
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 733px;
     padding: 20px;
+    height: 60%;
+    width: 80%;
 }
 
 .caja1 {
     text-align: center;
+    height: 40%;
 }
 
 .boton{
@@ -77,6 +75,7 @@ body {
     color: rgb(255, 255, 255);
     margin: 20px;
     padding: 5px 20px;
+    height: 10%;
     transition: background-color solid 2s;
 }
 
@@ -84,10 +83,24 @@ body {
     background-color: rgb(175, 175, 175);
 }
 
+.boton-pistola{
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    padding: 5px 20px;
+    height: 10%;
+    transition: background-color solid 2s;
+}
+
+.boton-pistola:hover{
+    background-color: rgb(175, 175, 175);
+}
+
 .caja1 img{
     border: 3px solid rgb(29, 240, 1);
     width: 80%;
     border-radius: 20%;
+    height: 100%;
 }
 
 .caracteristicas-box{
@@ -123,22 +136,41 @@ body {
     border: 3px solid black;
 }
 
-@media (width < 500px){
+@media(width > 1000px){
+    .box-glock{
+        margin-top: 200px;
+        width: 50%;
+        height: 94%;
+    }
+    .caja1 img {
+        max-width: 800px;
+        max-height: 100%;
+    }
+}
+
+@media (width < 540px) {
     header{
         width: 100%;
         flex-direction: column;
         align-items: start;
     }
+    .box-glock{
+        width: 100%;
+        height: 100%;
+        margin-top: 500px;
+    }
+
     .caja1{
-        width: 70%;
+        height: 25%;
     }
-    .box{
-        margin-top: 70vh;
-        width: 99%;
-        min-height: 99%;
+
+    .caracteristicas-box{
+        justify-content: start;
     }
-    .caja1 img {
-        width: 80%;
-        height: 80%;
+}
+
+@media (width < 500px){
+    .caracteristicas-box{
+        width: 30%;
     }
 }

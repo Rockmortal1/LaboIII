@@ -12,17 +12,13 @@ header{
 .logo{
     text-decoration: none;
     color: white;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
 }
 
 header h1{
     margin-left: 35%;
-}
-
-@media (width < 540px) {
-    header{
-        flex-direction: column;
-        align-items: start;
-    }
 }
 
 header img {
@@ -30,6 +26,7 @@ header img {
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -87,4 +84,19 @@ body {
 
 .login-button:hover{
     background-color: #504f4f;
+}
+
+@media (width < 540px) {
+    header{
+        flex-direction: column;
+        align-items: start;
+    }
+    .login-box{
+        width: 50%;
+        margin-top: 20vh;
+    }
+    .grupo{
+        width: 80%;
+        height: 80%;
+    }
 }

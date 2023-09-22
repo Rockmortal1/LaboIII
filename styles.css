@@ -13,6 +13,12 @@ header{
     font-size: 12px;
 }
 
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
 .iniciar{
     text-decoration: none;
 }
@@ -33,7 +39,8 @@ header{
 }
 
 body{
-
+    min-height: 100vh;
+    justify-content: space-between;
     background-color: rgb(109, 108, 108);
     margin: 0;
     padding: 0;
