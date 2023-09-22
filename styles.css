@@ -56,7 +56,6 @@ body{
 main{
     display: flex;
     width: 99%;
-    border: 3px solid red;
     justify-content: space-around;
 }
 
@@ -170,7 +169,6 @@ main{
 }
 
 .final{
-    border: 3px solid rgb(25, 1, 240);
     display: flex;
     width: 99%;
     justify-content: center;
